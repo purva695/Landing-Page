@@ -206,15 +206,20 @@ nav {
 .rating{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
-    font-size: 18px;
+    flex-wrap: nowrap;
 }
 .stars{
     color: #f4b400;
     display: flex;
+    align-items: center;
     gap: 3px;
+    flex-shrink: 0;
 }
 .rating span{
+    margin: 0;
+    white-space: nowrap;
     background: none;
     padding: 0;
     color: #444;
