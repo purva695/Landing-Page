@@ -21,13 +21,11 @@ A modern and responsive Coffee Shop Landing Page created using HTML and CSS.
 
 ## 📂 Project Structure
 
-'''text
 Landing-Page/
- │── index.html
- │── style.css
- │── script.js
- │── images/
- '''
+├── index.html
+├── style.css
+├── script.js
+└── images/
 
 ## 🌐 Live Demo
 
