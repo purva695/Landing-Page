@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven | Coffee Landing Page</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+<body>
+    
+    <!-- Header -->
+    <hearder>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h2>Brew Haven</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+
+        </nav>
+    </hearder>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content" id="home"> 
+            <span><i class="fa-solid fa-mug-hot"></i>
+                Premium Coffee
+            </span>
+            <h1>Brew Happiness <br> In Every Cup</h1>
+            <p>
+                Experience the perfect blend of taste,
+                aroma, and comfort crafted with love.
+            </p>
+            <div class="hero-buttons">
+                <button class="primary-btn">
+                    Order Now
+                </button>
+                <button class="secondary-btn">
+                    View Menu
+                </button>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>
+                        5000+ Happy Customers
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-coffee.png" alt="Coffee">
+        </div>
+    </section>
+
+    <!-- Featured Coffee -->
+    <section class="featured" id="menu">
+        <h2>Our Best Coffee</h2>
+        <div class="coffee-container">
+            <div class="coffee-card">
+                <img src="images/latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>A smooth blend of rich espresso and silky steamed milk for a perfectly balanced taste.</p>
+                <span>₹199</span>
+                <button>Order Now</button>
+            </div>
+            <div class="coffee-card">
+                <img src="images/cappuccino.jpg" alt="Latte">
+                <h3>Cappuccino</h3>
+                <p>A classic Italian coffee topped with thick, creamy foam and a bold espresso flavor.</p>
+                <span>₹249</span>
+                <button>Order Now</button>
+            </div>
+            <div class="coffee-card">
+                <img src="images/mocha.jpg" alt="Latte">
+                <h3>Mocha</h3>
+                <p>A delicious combination of espresso, steamed milk, and rich chocolate for a sweet delight.</p>
+                <span>₹229</span>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="images/about.jpg" alt="About">
+        </div>
+        <div class="about-content">
+            <span>About Us</span>
+            <h2>Crafting Coffee with Passion Since 2014</h2>
+            <p>
+                At Brew Haven, every cup is crafted with carefully selected beans, expert roasting techniques, and a passion for delivering an unforgettable coffee experience.
+            </p>
+            <div class="features">
+                <div>
+                    <i class="fa-solid fa-seedling"></i>
+                    Premium Beans</div>
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
+                    Organic Ingredients</div>
+                <div>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Fast Delivery</div>
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    Made With Love</div>
+            </div>
+            <button class="primary-btn">
+                Learn More
+            </button>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <span>Gallery</span>
+        <h2>Moments Brewed to Perfection</h2>
+        <div class="gallery-container">
+            <img src="images/gallery1.jpg" alt="">            
+            <img src="images/gallery2.jpg" alt="">            
+            <img src="images/gallery3.jpg" alt="">            
+            <img src="images/gallery4.jpg" alt="">            
+            <img src="images/gallery5.jpg" alt="">            
+            <img src="images/gallery6.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <span>Testimonials</span>
+        <h2>What Our Customers Say</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    Brew Haven serves the best coffee I've ever had. The aroma, taste, and atmosphere are simply outstanding.
+                </p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Sarah Johnson</h3>
+                <span>Coffee Enthusiast</span>
+            </div>
+            <div class="review-card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    Every visit feels special. The coffee is consistently fresh, and the service is exceptional.
+                </p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Michael Brown</h3>
+                <span>Regular Customer</span>
+            </div>
+            <div class="review-card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    A perfect place to relax with friends while enjoying premiun handcrafted coffee.
+                </p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Emily Davis</h3>
+                <span>Food Blogger</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <span>Contact Us</span>
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <!-- Left Side -->
+            <div class="contact info">
+                <div class="info-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Coffee Street, Brew City</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@brewhaven.com</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Mon - Sun : 8:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="primary-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Brew Haven
+                </h2>
+                <p>
+                    Brewing happiness, one cup at a time.
+                </p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            © 2026 Brew Haven. All Right Reserved.
+        </p>
+     </footer>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
