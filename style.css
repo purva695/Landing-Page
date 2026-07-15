@@ -104,8 +104,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
-    padding: 90px 8% 40px;
+    padding:100px 10%;
+    background: #f6ede5;
 }
 .hero-content {
     flex: 1;
@@ -231,15 +231,16 @@ nav {
 
 /* Featured Coffee */
 .featured {
-    padding: 20px 8% 80px;
-    padding-top: 30px;
+    padding:100px 10%;
     text-align: center;
+    background: #ffffff;
 }
 .featured h2{
     font-family: 'Playfair Display',serif;
-    font-size: 50px;
+    font-size: 48px;
+    font-weight:700;
     color: var(--primary);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .coffee-container{
     display: grid;
@@ -303,7 +304,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
-    padding: 100px 8%;
+    padding:100px 10%;
+    background: #f9f4ef;
+}
+.about span{
+    font-family: 'Playfair Display',serif;
+    font-size: 48px;
+    font-weight:700;
+    color: var(--primary);
+    margin-bottom: 20px;
 }
 .about-image{
     flex: 1;
@@ -353,13 +362,20 @@ nav {
 
 /* Gallery */
 .gallery{
-    padding: 100px 8%;
+    padding:100px 10%;
     text-align: center;
+    background: #ffffff;
+}
+.gallery span{
+    font-family: 'Playfair Display',serif;
+    font-size: 48px;
+    font-weight:700;
+    color: var(--primary);
+    margin-bottom: 20px;
 }
 .gallery h2{
-    font-size: 48px;
+    font-size: 45px;
     font-family: 'Playfair Display',serif;
-    color: var(--primary);
     margin: 20px 0 60px;
 }
 .gallery-container{
@@ -381,14 +397,20 @@ nav {
 
 /* Reviews */
 .reviews{
-    padding: 100px 8%;
+    padding:100px 10%;
     text-align: center;
-    background: #faf8f6;
+    background: #f6ede5;
+}
+.reviews span{
+    font-family: 'Playfair Display',serif;
+    font-size: 48px;
+    font-weight:700;
+    color: var(--primary);
+    margin-bottom: 20px;
 }
 .reviews h2{
-    font-size: 48px;
+    font-size: 45px;
     font-family: 'Playfair Display',serif;
-    color: var(--primary);
     margin: 20px 0 60px;
 }
 .review-container{
@@ -454,7 +476,7 @@ nav {
 
 /* Contact */
 .contact{
-    padding: 100px 8%;
+    padding:100px 10%;
     text-align: center;
 }
 .contact h2{
@@ -528,10 +550,10 @@ nav {
 
 /* Footer */
 .footer{
-    background: #2f1b14;
+    background: #2b1b17;
     color: white;
     text-align: center;
-    padding: 70px 8% 30px;
+    padding:100px 10%;
 }
 .footer-logo h2{
     font-size: 34px;
@@ -657,7 +679,7 @@ nav {
     }
 }
 ::selection{
-    background: var(--primary);
+    background: #6f4e37;
     color: white;
 }
 .sticky{
