@@ -29,7 +29,7 @@ Landing-Page/
 
 ## 🌐 Live Demo
 
-(Add your landing page screenshot here)
+https://landingpage-by-purva.netlify.app/
 
 ## 👩‍💻 Author
 
