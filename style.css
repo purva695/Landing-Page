@@ -34,6 +34,7 @@ html{
 body {
     font-family: 'Poppins',sans-serif;
     background:var(--background);
+    overflow-x: hidden;
     color:var(--black);
 }
 
@@ -41,7 +42,7 @@ body {
 header {
     width: 100%;
     background: white;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 12px rgba(0,0,0,0.06);
     position: fixed;
     top: 0;
     left: 0;
@@ -51,7 +52,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
+    padding: 15px 8%;
     max-width: 1200px;
     margin: auto;
 }
@@ -73,15 +74,15 @@ nav {
     color: var(--primary);
 }
 .logo h2{
-    font-size: 28px;
+    font-size: 26px;
     color: var(--primary);
-    font-family: 'Playfair Diplay', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .nav-links a{
     text-decoration: none;
     color: var(--black);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -104,11 +105,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:100px 10%;
+    padding:80px 8%;
     background: #f6ede5;
 }
 .hero-content {
     flex: 1;
+    max-width: 550px;
 }
 .hero-image {
     flex: 1;
@@ -120,8 +122,8 @@ nav {
 .hero-image::before{
     content: "";
     position: absolute;
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     background: #f5e8da;
     border-radius: 50%;
     z-index: -1;
@@ -145,7 +147,8 @@ nav {
 }
 .hero-content h1{
     font-family: 'Playfair Display',serif;
-    font-size: 70px;
+    font-size: 58px;
+    max-width: 550px;
     line-height: 1.2;
     color: var(--black);
     margin-bottom: 20px;
@@ -154,12 +157,12 @@ nav {
     font-size: 18px;
     color: #555;
     line-height: 1.8;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     max-width: 500px;
 }
 .hero-buttons{
     display: flex;
-    gap: 25px;
+    gap: 18px;
     margin-bottom: 35px;
 }
 .hero-buttons button{
@@ -176,7 +179,7 @@ nav {
     background: var(--primary);
     color: #fff;
     padding: 14px 32px;
-    border-radius: 50%;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: all .3s ease;
@@ -229,83 +232,14 @@ nav {
     }
 }
 
-/* Featured Coffee */
-.featured {
-    padding:100px 10%;
-    text-align: center;
-    background: #ffffff;
-}
-.featured h2{
-    font-family: 'Playfair Display',serif;
-    font-size: 48px;
-    font-weight:700;
-    color: var(--primary);
-    margin-bottom: 20px;
-}
-.coffee-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 35px;
-}
-.coffee-card{
-    background: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    transition: .4s;
-    overflow: hidden;
-}
-.coffee-card:hover{
-    transform: translateY(-10px);
-}
-.coffee-card:hover img{
-    transform:scale(1.08);
-}
-.coffee-card img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: 0.4s;
-}
-.coffee-card h3{
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-.coffee-card p{
-    color: #666;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-.coffee-card span{
-    display: block;
-    color: var(--primary);
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.coffee-card button{
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 14px 32px;
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .3s;
-}
-.coffee-card button:hover{
-    background: #593b28;
-}
-
 /* About */
 .about{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    padding:100px 10%;
-    background: #f9f4ef;
+    gap: 40px;
+    padding:80px 8%;
+    background: #ffffff;
 }
 .about span{
     font-family: 'Playfair Display',serif;
@@ -325,13 +259,13 @@ nav {
     flex: 1;
 }
 .about-content h2{
-    font-size: 45px;
+    font-size: 38px;
     font-family: 'Playfair Display',serif;
     margin: 20px 0;
 }
 .about-content p{
     color: #666;
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 25px;
 }
 .features{
@@ -343,9 +277,9 @@ nav {
 .features div{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     background: #fff;
-    padding: 15px 20px;
+    padding: 14px 16px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,.08);
     transition: 0.3s;
@@ -360,9 +294,79 @@ nav {
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
+/* Featured Coffee */
+.featured {
+    padding:80px 8%;
+    text-align: center;
+    background: #f9f4ef;
+}
+.featured h2{
+    font-family: 'Playfair Display',serif;
+    font-size: 48px;
+    font-weight:700;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+.coffee-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+.coffee-card{
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    line-height: 1.6;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .4s;
+    overflow: hidden;
+}
+.coffee-card:hover{
+    transform: translateY(-10px);
+}
+.coffee-card:hover img{
+    transform:scale(1.08);
+}
+.coffee-card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.coffee-card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.coffee-card p{
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.coffee-card span{
+    display: block;
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.coffee-card button{
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.coffee-card button:hover{
+    background: #593b28;
+}
+
 /* Gallery */
 .gallery{
-    padding:100px 10%;
+    padding:80px 8%;
     text-align: center;
     background: #ffffff;
 }
@@ -385,9 +389,9 @@ nav {
 }
 .gallery-container img{
     width: 100%;
-    height: 280px;
+    height: 230px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 16px;
     transition: .4s;
     cursor: pointer;
 }
@@ -397,7 +401,7 @@ nav {
 
 /* Reviews */
 .reviews{
-    padding:100px 10%;
+    padding:80px 8%;
     text-align: center;
     background: #f6ede5;
 }
@@ -424,11 +428,11 @@ nav {
     align-items: center;
     text-align: center;
     background: white;
-    padding: 35px;
+    padding: 28px;
     border-radius: 20px;
-    min-height: 380px;
+    min-height: 330px;
     position: relative;
-    box-shadow: 0 20px 40px rgba(0,0,0,.18);
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
     transition: .3s;
 }
 .review-card::before{
@@ -466,7 +470,7 @@ nav {
     font-size: 20px;
 }
 .review-card h3{
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 8px;
 }
 .review-card span{
@@ -476,20 +480,26 @@ nav {
 
 /* Contact */
 .contact{
-    padding:100px 10%;
+    padding:40px 8%;
     text-align: center;
 }
-.contact h2{
-    font-size: 48px;
+.contact span{
     font-family: 'Playfair Display',serif;
+    font-size: 48px;
+    font-weight:700;
     color: var(--primary);
-    margin: 20px 0 60px;
+    margin-bottom: 20px;
+}
+.contact h2{
+    font-size: 45px;
+    font-family: 'Playfair Display',serif;
+    margin: 15px 0 25px;
 }
 .contact-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: start;
+    gap: 35px;
+    align-items: center;
 }
 .contact-info{
     display: flex;
@@ -499,15 +509,15 @@ nav {
 .info-box{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     background: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 .info-box i{
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     background: var(--primary);
     color: #fff;
     border-radius: 50%;
@@ -544,7 +554,7 @@ nav {
     border-color: var(--primary);
 }
 .contact-form button{
-    width: 220px;
+    width: 180px;
     align-self: flex-start;
 }
 
@@ -553,7 +563,7 @@ nav {
     background: #2b1b17;
     color: white;
     text-align: center;
-    padding:100px 10%;
+    padding:40px 8%;
 }
 .footer-logo h2{
     font-size: 34px;
@@ -619,69 +629,144 @@ nav {
 
 /* Responsive Design */
 @media (max-width:992px){
+    nav{
+        padding:16px 6%;
+    }
     .hero,
     .about,
     .contact-container{
-        grid-template-columns: 1fr;
-        display: grid;
-        gap: 50px;
-        text-align: center;
+        display:grid;
+        grid-template-columns:1fr;
+        gap:40px;
+        text-align:center;
     }
     .hero-content,
     .about-content{
-        order: 2;
+        order:2;
     }
     .hero-image,
     .about-image{
-        order: 1;
+        order:1;
+    }
+    .hero-content{
+        max-width:100%;
+        margin:auto;
+    }
+    .hero-content p{
+        max-width:100%;
+    }
+    .hero-image img{
+        width:320px;
+    }
+    .hero-image::before{
+        width:280px;
+        height:280px;
     }
     .coffee-container,
     .gallery-container,
     .review-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
+    }
+    .contact-form button{
+        align-self:center;
     }
 }
 @media (max-width:768px){
-    h1{
-        font-size: 42px;
+    nav{
+        padding:15px 5%;
     }
-    h2{
-        font-size: 34px !important;
+    .logo h2{
+        font-size:22px;
     }
-    .navbar{
-        padding: 18px 5%;
+    .logo i{
+        font-size:24px;
     }
     .nav-links{
-        display: none;
+        display:none;
+    }
+    .hero{
+        padding:120px 6% 70px;
+    }
+    .hero-content h1{
+        font-size:40px;
+    }
+    .hero-content p{
+        font-size:16px;
     }
     .hero-buttons{
-        flex-direction: column;
-        gap: 15px;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+    .primary-btn,
+    .secondary-btn{
+        width:220px;
+        text-align:center;
+    }
+    .hero-image img{
+        width:260px;
+    }
+    .hero-image::before{
+        width:240px;
+        height:240px;
+    }
+    .featured,
+    .about,
+    .gallery,
+    .reviews,
+    .contact,
+    .footer{
+        padding:70px 6%;
     }
     .coffee-container,
     .gallery-container,
     .review-container{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
     .features{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
+    }
+    .gallery-container img{
+        height:220px;
+    }
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+    .info-box{
+        text-align:left;
+    }
+    .contact-form button{
+        width:100%;
+        align-self:stretch;
     }
     .footer-links{
-        gap: 15px;
-    }
-    .coffee-card img,
-    .about-image img{
-        transition: .4s;
-    }
-    .coffee-card:hover img,
-    .about-image:hover img{
-        transform: scale(1.05);
+        gap:15px;
     }
 }
-::selection{
-    background: #6f4e37;
-    color: white;
-}
-.sticky{
-    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+@media (max-width:480px){
+    .hero-content h1{
+        font-size:34px;
+    }
+    .hero-image img{
+        width:220px;
+    }
+    .hero-image::before{
+        width:210px;
+        height:210px;
+    }
+    .featured h2,
+    .about-content h2,
+    .gallery h2,
+    .reviews h2,
+    .contact h2{
+        font-size:30px;
+    }
+    .coffee-card{
+        padding:20px;
+    }
+    .review-card{
+        padding:22px;
+        min-height:auto;
+    }
 }
